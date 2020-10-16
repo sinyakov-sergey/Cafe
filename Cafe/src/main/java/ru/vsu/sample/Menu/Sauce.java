@@ -6,6 +6,6 @@ public class Sauce extends Dish {
 
     public Sauce(String name, BigDecimal price, int TimeInMinutes, Singularity singularity) {
         super(name, price, TimeInMinutes, singularity);
-        setCategory(Category.sauce);
+        setCategory(Category.SAUCE);
     }
 }

@@ -6,6 +6,6 @@ public class Garnish extends Dish {
 
     public Garnish(String name, BigDecimal price, int TimeInMinutes, Singularity singularity) {
         super(name, price, TimeInMinutes, singularity);
-        setCategory(Category.garnish);
+        setCategory(Category.GARNISH);
     }
 }

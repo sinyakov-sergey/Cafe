@@ -8,8 +8,15 @@ import java.math.BigDecimal;
 
 public class AlcoholicDrink extends Drink {
 
-    public AlcoholicDrink(String name, BigDecimal price, int TimeInMinutes, Singularity singularity) {
+    private final int degree;
+
+    public AlcoholicDrink(String name, BigDecimal price, int TimeInMinutes, Singularity singularity, int degree) {
         super(name, price, TimeInMinutes, singularity);
-        setCategory(Category.alcoholicDrink);
+        this.degree = degree;
+        setCategory(Category.ALCOHOLICDRINK);
+    }
+
+    public int getDegree() {
+        return degree;
     }
 }

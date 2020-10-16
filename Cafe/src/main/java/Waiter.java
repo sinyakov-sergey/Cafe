@@ -17,7 +17,7 @@ public class Waiter {
                 i--;
             }
             else {
-                if (!Singularity.noSingularity.equals(client.getPrecedency())){
+                if (!Singularity.NOSINGULARITY.equals(client.getPrecedency())){
                     if (!dish.getSingularity().equals(client.getPrecedency())){
                         AllFood.remove(dish);
                         i--;
@@ -26,16 +26,6 @@ public class Waiter {
             }
         }
         return AllFood;
-    }
-
-    public static BigDecimal calculateOrder(Client client){
-        List<Dish> order = client.getOrder();
-        BigDecimal check = new BigDecimal("0.0");
-        for (Dish dish : order){
-            check = check.add(dish.getPrice());
-        }
-        if (client.getMoney().compareTo(check) < 0) return new BigDecimal("-1");
-        return check;
     }
 }
 

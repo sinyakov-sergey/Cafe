@@ -13,7 +13,7 @@ public class Client {
 
     private final Singularity precedency;//предпочтения в еде
 
-    private List<Dish> order = new LinkedList<>();
+    private final List<Dish> order = new LinkedList<>();
     
 
     public Client(int TimeInMinutes, BigDecimal money, Singularity precedency) {

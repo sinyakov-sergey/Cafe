@@ -10,6 +10,6 @@ public class SweetDrink extends Drink {
 
     public SweetDrink(String name, BigDecimal price, int TimeInMinutes, Singularity singularity) {
         super(name, price, TimeInMinutes, singularity);
-        setCategory(Category.sweetDrink);
+        setCategory(Category.SWEETDRINK);
     }
 }
